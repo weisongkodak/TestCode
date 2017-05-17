@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="33dp"
+        android:paddingRight="33dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:layout_marginTop="21dp"
+            android:background="#00000000">
+
+            <com.example.song.songapplication.widget.CircleImageView
+                android:id="@+id/img_userInfo_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/user_photo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="点击头像更新头像"
+            android:textColor="#837f7f"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/pbar_waiting"
+                style="@style/KMProgressBar_Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/uploadImageResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/uploadSuccess"
+            android:textColor="#837f7f"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_userInfo_next"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="25dp"
+            android:text="post image to server" />
+    </LinearLayout>
+</LinearLayout>

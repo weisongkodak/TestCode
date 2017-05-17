@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <!-- Action Bar -->
+    <declare-styleable name="MActionBar">
+        <attr name="titleText" format="string" />
+        <attr name="right_button_image_src" format="reference" />
+        <attr name="left_button_image_src" format="reference" />
+        <attr name="right_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="myImageView">
+        <attr name="borderRadius" format="dimension"></attr>
+        <attr name="src" format="reference"></attr>
+        <attr name="type">
+            <enum name="circle" value="0"></enum>
+            <enum name="round" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="swipelistviewstyle">
+        <attr name="right_width" format="dimension"></attr>
+    </declare-styleable>
+</resources>
